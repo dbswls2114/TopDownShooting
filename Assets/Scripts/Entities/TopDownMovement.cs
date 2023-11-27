@@ -8,16 +8,19 @@ public class TopDownMovement : MonoBehaviour
 
     private Vector2 _moveMentDirection = Vector2.zero;
     private Rigidbody2D _rigidbody;
+    [SerializeField] private Animator _animator;
+    bool _isMoving = false;
 
     private void Awake()
     {
         _controller = GetComponent<TopDownCharacterController>();
         _rigidbody = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
     }
 
     private void Start()
     {
-        _controller.OnMoveEvent += Move;
+        _controller.OnMoveEvent += Move;       
     }
 
     private void FixedUpdate()
@@ -34,5 +37,15 @@ public class TopDownMovement : MonoBehaviour
     {
         direction = direction * 5;
         _rigidbody.velocity = direction;
+        if(direction != Vector2.zero)
+        {
+            _isMoving = true;           
+        }
+        else if(direction == Vector2.zero)
+        {
+            _isMoving = false;           
+        }
+        _animator.SetBool("IsMove", _isMoving);
+
     }
 }

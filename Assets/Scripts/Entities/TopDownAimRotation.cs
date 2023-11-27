@@ -6,7 +6,7 @@ using UnityEngine;
 public class TopDownAimRotation : MonoBehaviour
 {
 
-    [SerializeField] private SpriteRenderer armRenderer;
+    //[SerializeField] private SpriteRenderer armRenderer;
     [SerializeField] private Transform armPivot;
 
     [SerializeField] private SpriteRenderer characterRenderer;
@@ -38,9 +38,11 @@ public class TopDownAimRotation : MonoBehaviour
         float rotZ = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         //아크탄젠트를 구하는거 
 
-        armRenderer.flipY = Mathf.Abs(rotZ)>90f;
-        characterRenderer.flipX = armRenderer.flipY;
-        //활의 좌우를 바꾸는거
+        //armRenderer.flipY = Mathf.Abs(rotZ)>90f;
+        //characterRenderer.flipX = armRenderer.flipY;
+
+        characterRenderer.flipX = Mathf.Abs(rotZ) > 90f; 
+        //캐릭터의 좌우를 바꿔버리기
 
         armPivot.rotation = Quaternion.Euler(0, 0, rotZ);
     }

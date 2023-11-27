@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerInputController : TopDownCharacterController
 {
     public Camera _camera;
-
+    
     private void Awake()
     {
         _camera = Camera.main;
