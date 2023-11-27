@@ -31,6 +31,7 @@ public class TopDownMovement : MonoBehaviour
     private void Move(Vector2 direction)
     {
         _moveMentDirection = direction;
+        //한글테스트
     }
 
     void ApplyMovement(Vector2 direction)
