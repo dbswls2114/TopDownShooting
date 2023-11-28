@@ -3190,7 +3190,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 283391504}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: OpenSetPlayerChararctersButtonClick
+        m_MethodName: changechar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
