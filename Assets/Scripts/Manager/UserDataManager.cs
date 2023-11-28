@@ -24,8 +24,7 @@ public class UserDataManager : MonoBehaviour
     }
 
     public void startButtonClick()
-    {
-        
+    {        
         PlayerPrefs.SetString("Name", input.text);        
         SceneManager.LoadScene("MainScene");
         //PlayerPrefs.GetString("Name"); 불러올때
