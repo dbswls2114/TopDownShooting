@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -7,9 +7,6 @@ using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour
 {
-    public TextMeshPro timeText;
-    public Text text;
-    public TextMesh textmesh;
     public TMP_Text realText;
 
     private void Awake()

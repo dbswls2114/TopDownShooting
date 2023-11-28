@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputController : TopDownCharacterController
 {
-    public Camera _camera;
+    [SerializeField] private Camera _camera;
     
     private void Awake()
     {
