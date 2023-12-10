@@ -2508,7 +2508,7 @@ MonoBehaviour:
   userName: "\uC724\uC9C4"
   NameText: {fileID: 0}
   ChangeSetNamePanel: {fileID: 1096290534357046705}
-  charone: {fileID: 7303418324621170687, guid: d2e74c974794b63478a95132197bfb87, type: 3}
+  charone: {fileID: 3411927953506805163, guid: d2e74c974794b63478a95132197bfb87, type: 3}
   chartwo: {fileID: 548462061085738641, guid: 91f5893b3a618a941935b986075ad328, type: 3}
 --- !u!1 &378314753
 GameObject:
